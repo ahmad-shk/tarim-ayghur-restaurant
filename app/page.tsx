@@ -2,8 +2,10 @@ import { Navigation } from "@/components/navigation"
 import { Hero } from "@/components/hero"
 import { WhereUghurMeetsCuisine } from "@/components/where-culture-meets-cuisine"
 import { MenuShowcase } from "@/components/menu-showcase"
+import { SignatureDishes } from "@/components/signature-dishes"
 import { OurPromise } from "@/components/our-promise"
 import { Ambience } from "@/components/ambience"
+import { AmbienceVideo } from "@/components/ambience-video"
 import { Testimonials } from "@/components/testimonials"
 import { Reservation } from "@/components/reservation"
 import { Map } from "@/components/map"
@@ -11,13 +13,15 @@ import { Footer } from "@/components/footer"
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-background">
+    <main className="min-h-screen bg-[#F5E3BF]">
       <Navigation />
       <Hero />
       <WhereUghurMeetsCuisine />
+      <SignatureDishes />
       <MenuShowcase />
-      <OurPromise />
       <Ambience />
+      <OurPromise />
+      <AmbienceVideo />
       <Testimonials />
       <Reservation />
       <Map />

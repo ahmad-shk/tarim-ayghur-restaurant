@@ -10,36 +10,35 @@ export function Hero() {
   return (
     <section
       id="home"
-      className="relative h-screen bg-gradient-to-b from-primary/20 to-background pt-16 flex items-center justify-center overflow-hidden"
+      className="relative md:flex items-center justify-center overflow-hidden relative pt-[94px]"
     >
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-20 right-10 w-96 h-96 bg-accent rounded-full blur-3xl"></div>
-        <div className="absolute bottom-0 left-0 w-80 h-80 bg-amber-700/20 rounded-full blur-3xl"></div>
+      <div style={{zIndex: '99'}} className="absolute lg:block hidden right-0 top-0 h-full">
+        <img className="h-full" src={'/image/banner-layer.png'} />
       </div>
-
-      <div className="relative z-10 max-w-4xl mx-auto px-4 text-center space-y-8">
-        <h1 className="text-6xl md:text-7xl font-serif font-bold text-foreground leading-tight text-balance whitespace-pre-line">
+      <div style={{zIndex: '99'}} className="absolute lg:block hidden left-0 top-0 h-full transform rotate-180">
+        <img className="h-full" src={'/image/banner-layer.png'} />
+      </div>
+      <div className="left-col 2xl:w-8/12 md:6/12 md:text-start text-center py-7 px-4">
+        <h1 className="aboreto-text 2xl:text-[60px] xl:text-[50px] text-[38px] text-primary leading-[1.1] text-balance whitespace-pre-line">
           {t("welcomeTitle")}
         </h1>
 
-        <p className="text-lg md:text-xl text-foreground/80 font-light max-w-2xl mx-auto leading-relaxed text-balance">
+        <p className="3xl:text-[24px] 2xl:text-[20px] leading-[1.5] text-[#000] my-[28px]">
           {t("welcomeDesc")}
         </p>
 
-        <div className="flex gap-4 justify-center">
-          <a
-            href="#reservation"
-            className="px-8 py-3 bg-accent text-accent-foreground font-serif font-semibold hover:opacity-90 transition"
-          >
-            {t("contact")}
-          </a>
+        <div className="flex md:justify-start justify-center gap-3">
+          
           <a
             href="#menu"
-            className="px-8 py-3 border-2 border-accent text-accent font-serif font-semibold hover:bg-accent/10 transition"
+            className="btn btn-primary hover:opacity-90 transition"
           >
-            EXPLORE MENU
+            {t("exploreMenu")}
           </a>
         </div>
+      </div>
+      <div>
+        <img src={'/image/banner.webp'} alt="img" className="object-cover" />
       </div>
     </section>
   )

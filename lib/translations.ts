@@ -1,49 +1,63 @@
 export const translations = {
   de: {
-    // Navigation
     home: "STARTSEITE",
     menu: "RESTAURANTMENÜ",
     gallery: "GALERIE",
     contact: "KONTAKT",
+    exploreMenu: "MENÜ ENTDECKEN",
 
-    // Hero
     welcomeTitle: "WILLKOMMEN BEI\nTARIM UIGUR\nRESTAURANT",
     welcomeDesc:
       "Erleben Sie die reichen Aromen des uigurischen Erbes in einem raffinierten Ambiente. Bei TARIM erzählt jedes Gericht eine Geschichte der Tradition, handwerklich gefertigt mit den feinsten Zutaten und mit Eleganz serviert.",
 
-    // Where Culture Meets Cuisine
     cultureMeetsTitle: "WO KULTUR\nAUF KÜCHE TRIFFT",
     cultureMeetsDesc:
       "Inspiriert von der alten Seidenstraße bringt TARIM das authentische Aroma der uigurischen Küche in ein modernes, luxuriöses Speiseerlebnis. Von handgezogenen Nudeln bis zu zartem Lammfleisch und aromatischem Pilaf - jeder Teller spiegelt die Kunstfertigkeit der uigurischen Küche wider - reichhaltig, geschmackvoll und zutiefst kulturell.",
     chefsBlendDesc:
       "Unsere Köche verbinden altbewährte Rezepte mit zeitgenössischer Präsentation und schaffen ein Speiseerlebnis, das zeitlos und raffiniert ist.",
 
-    // Menu
     sliceOfHeaven: "HIMMELSFLOCKE",
     essenceOfFlavors: "Essenz traditioneller Aromen",
     viewMenu: "ANSICHT",
 
-    // Our Promise
+    SignatureDishesTitle: "Signature Dishes",
+    SignatureDishesSubTitle: "Essenz traditioneller Aromen",
+    signatureDishTitle1: "Kawap",
+    signatureDishSubTitle1: "(Lammspieße)",
+    signatureDishDesc1: "Holzkohle-gegrilltes Lamm mit authentischen uigurischen Gewürzen.",
+    signatureDishTitle2: "Uyghur Desserts",
+    signatureDishSubTitle2: "(Lammspieße)",
+    signatureDishDesc2: "Holzkohle-gegrilltes Lamm mit authentischen uigurischen Gewürzen.",
+    signatureDishTitle3: "Samsa",
+    signatureDishSubTitle3: "",
+    signatureDishDesc3: "Ofengebackenes Gebäck, gefüllt mit gewürztem Fleisch, goldbraun und knusprig.",
+    signatureDishTitle4: "Polo",
+    signatureDishSubTitle4: "(Uyghur Pilaf)",
+    signatureDishDesc4: "Aromatischer Reis, gekocht mit Lamm, Karotten und einer leichten Süße.",
+    signatureDishTitle5: "Laghman",
+    signatureDishSubTitle5: "(Handgezogene Nudeln)",
+    signatureDishDesc5: "Frische Nudeln mit gewürztem Rindfleisch und Gemüse in einer herzhaften Sauce.",
+
     ourPromiseTitle: "UNSER VERSPRECHEN",
     ourPromiseSubtitle: "Authentizität. Qualität. Exzellenz.",
     ourPromiseDesc:
       "Bei TARIM sind wir stolz, ein authentisches uigurisches Speiseerlebnis anzubieten, das mit halal-zertifizierten Zutaten zubereitet und mit Sorgfalt serviert wird. Jedes Detail - von unseren Zutaten bis zu unserer Präsentation - macht Ihren Besuch unvergesslich.",
+    ourPromiseCta: "Ihr Besuch wird unvergesslich",
 
-    // Ambience
     ambienceTitle: "AMBIENTE & ERLEBNIS",
     ambienceSubtitle: "Luxus. Komfort. Kultur.",
 
-    // Testimonials
     testimonialsTitle: "BEWERTUNGEN",
+    testimonialsSubTitle: "BEWERTUNGEN",
     testimonialReview:
       "Dies ist ein großartiges Restaurant mit großartigem Essen und noch besserer Atmosphäre. Das Essen ist köstlich und die Bedienung war unverschämt schnell und freundlich. Es ist eindeutig eines der besten Restaurants in Wien!",
     customerName: "JONATHAN XANDER",
 
-    // Reservation
     reservationTitle: "RESERVIERUNG",
     reservationSubtitle: "Freude machen durch Reservierung",
     reservationDesc:
       "Reservieren Sie Ihren Tisch im Voraus, um einen reibungslosen Service und die perfekte Speiseatmosphäre zu genießen. Unser Team sorgt dafür, dass Ihr Besuch perfekt vorbereitet wird - von Ihrem bevorzugten Platz bis zu Ihren Lieblingsspeisen.",
+    followUs: "Folgen Sie uns:",
     phoneLabel: "Telefonnummer",
     phoneValue: "+43 1 728 0745",
     nameLabel: "Name",
@@ -52,63 +66,80 @@ export const translations = {
     bookTable: "TISCH RESERVIEREN",
     bookNow: "JETZT BUCHEN",
 
-    // Map
     locationTitle: "UNSER STANDORT",
     locationDesc:
       "Besuchen Sie unser Restaurant im Herzen von Wien. Wir befinden uns in der Nähe des Enklplatz U-Bahn-Zentrums für einfache Anfahrt und Komfort.",
     address: "Lorystraße 44, 1110 Wien, Österreich",
     getDirections: "RICHTUNGEN ABRUFEN",
 
-    // Footer
     footerAbout:
       "TARIM ist ein authentisches uigurisches Restaurant, das die Küche der Seidenstraße in ein modernes Speiseerlebnis bringt.",
     allRightsReserved: "Alle Rechte vorbehalten",
   },
+
+  // English
   en: {
-    // Navigation
     home: "HOME",
     menu: "RESTAURANT MENU",
     gallery: "GALLERY",
     contact: "CONTACT",
+    exploreMenu: "EXPLORE MENU",
 
-    // Hero
     welcomeTitle: "WELCOME TO\nTARIM UYGHUR\nRESTAURANT",
     welcomeDesc:
       "Experience the rich flavors of Uyghur heritage in a refined setting. At TARIM, every dish tells a story of tradition, crafted with the finest ingredients and served with elegance.",
 
-    // Where Culture Meets Cuisine
     cultureMeetsTitle: "WHERE CULTURE\nMEETS CUISINE",
     cultureMeetsDesc:
       "Inspired by the ancient Silk Road, TARIM Uyghur Restaurant brings the authentic taste of Uyghur cuisine to a modern, luxurious dining experience. From hand-pulled noodles to tender lamb dishes and aromatic pilaf, every plate reflects the artistry of Uyghur cooking - rich, flavorful, and deeply cultural.",
     chefsBlendDesc:
       "Our chefs blend age-old recipes with contemporary presentation, creating a dining experience that's both timeless and sophisticated.",
 
-    // Menu
     sliceOfHeaven: "SLICE OF HEAVEN",
     essenceOfFlavors: "Essence of Traditional Flavors",
     viewMenu: "VIEW",
 
-    // Our Promise
+    SignatureDishesTitle: "Signature Dishes",
+    SignatureDishesSubTitle: "Essence of Traditional Flavors",
+    signatureDishTitle1: "Kawap",
+    signatureDishSubTitle1: "(Lamb Skewers)",
+    signatureDishDesc1: "Charcoal-grilled lamb seasoned with authentic Uyghur spices.",
+    signatureDishTitle2: "Uyghur Desserts",
+    signatureDishSubTitle2: "(Lamb Skewers)",
+    signatureDishDesc2: "Charcoal-grilled lamb seasoned with authentic Uyghur spices.",
+    signatureDishTitle3: "Samsa",
+    signatureDishSubTitle3: "",
+    signatureDishDesc3: "Oven-baked pastry stuffed with spiced meat, golden and crisp.",
+    signatureDishTitle4: "Polo",
+    signatureDishSubTitle4: "(Uyghur Pilaf)",
+    signatureDishDesc4: "Fragrant rice cooked with lamb, carrots, and a touch of sweetness.",
+    signatureDishTitle5: "Laghman",
+    signatureDishSubTitle5: "(Hand-Pulled Noodles)",
+    signatureDishDesc5: "Freshly made noodles with seasoned beef and vegetables in a savory sauce.",
+
     ourPromiseTitle: "OUR PROMISE",
     ourPromiseSubtitle: "Authenticity. Quality. Excellence.",
     ourPromiseDesc:
       "At TARIM, we take pride in offering an authentic Uyghur dining experience, prepared with halal-certified ingredients and served with care. Every detail - from our ingredients to our presentation - makes your visit memorable.",
+    ourPromiseCta: "Your visit memorable",
 
-    // Ambience
     ambienceTitle: "AMBIENCE & EXPERIENCE",
     ambienceSubtitle: "Luxury. Comfort. Culture.",
 
-    // Testimonials
     testimonialsTitle: "CUSTOMER REVIEWS",
+    testimonialsSubTitle: "Customer Reviews",
     testimonialReview:
       "This is a great restaurant with great food and even better atmosphere. The food is delicious and the service was incredibly fast and friendly. It is definitely one of the best restaurants in Vienna!",
     customerName: "JONATHAN XANDER",
+    testimonialReview1:
+      "This is a great restaurant with great food and even better atmosphere. The food is delicious and the service was incredibly fast and friendly. It is definitely one of the best restaurants in Vienna!",
+    customerName1: "JONATHAN XANDER",
 
-    // Reservation
     reservationTitle: "RESERVATION",
     reservationSubtitle: "Fell Happiness by Making a Reservation",
     reservationDesc:
       "Reserve your table in advance to enjoy seamless service and the perfect dining atmosphere. Our team will ensure your visit is prepared to perfection - from your preferred seating to your favorite dishes.",
+    followUs: "Follow Us:",
     phoneLabel: "Phone Number",
     phoneValue: "+43 1 728 0745",
     nameLabel: "Name",
@@ -117,77 +148,92 @@ export const translations = {
     bookTable: "BOOK TABLE",
     bookNow: "BOOK NOW",
 
-    // Map
     locationTitle: "OUR LOCATION",
     locationDesc:
       "Visit our restaurant in the heart of Vienna. We are located near Enklplatz U-Bahn station for easy access and convenience.",
     address: "Lorystraße 44, 1110 Wien, Austria",
     getDirections: "GET DIRECTIONS",
 
-    // Footer
-    footerAbout: "TARIM is an authentic Uyghur restaurant bringing Silk Road cuisine to a modern dining experience.",
+    footerAbout:
+      "TARIM is an authentic Uyghur restaurant bringing Silk Road cuisine to a modern dining experience.",
     allRightsReserved: "All Rights Reserved",
   },
+
   zh: {
-    // Navigation
     home: "主页",
     menu: "餐厅菜单",
     gallery: "画廊",
     contact: "联系",
+    exploreMenu: "探索菜单",
 
-    // Hero
     welcomeTitle: "欢迎来到\nTARIM维吾尔\n餐厅",
     welcomeDesc:
       "在精致的环境中体验维吾尔遗产的丰富风味。在TARIM，每道菜都讲述了传统的故事，用最好的食材精心烹制，优雅地呈现。",
 
-    // Where Culture Meets Cuisine
     cultureMeetsTitle: "文化与\n美食的相遇",
     cultureMeetsDesc:
       "受古丝绸之路的启发，TARIM维吾尔餐厅将维吾尔美食的真实风味带入现代奢华的餐饮体验。从手工拉面到嫩羊肉菜肴和芳香的抓饭，每一盘都反映了维吾尔烹饪的艺术 - 浓郁、美味且文化深厚。",
-    chefsBlendDesc: "我们的厨师将古老的食谱与当代呈现方式相结合，创造出既经典又精致的用餐体验。",
+    chefsBlendDesc:
+      "我们的厨师将古老的食谱与当代呈现方式相结合，创造出既经典又精致的用餐体验。",
 
-    // Menu
     sliceOfHeaven: "天堂的一角",
     essenceOfFlavors: "传统风味的精髓",
     viewMenu: "查看",
 
-    // Our Promise
+    SignatureDishesTitle: "招牌菜",
+    SignatureDishesSubTitle: "传统风味精髓",
+    signatureDishTitle1: "Kawap",
+    signatureDishSubTitle1: "(羊肉串)",
+    signatureDishDesc1: "用正宗维吾尔香料腌制的炭火烤羊肉。",
+    signatureDishTitle2: "维吾尔甜点",
+    signatureDishSubTitle2: "(羊肉串)",
+    signatureDishDesc2: "用正宗维吾尔香料腌制的炭火烤羊肉。",
+    signatureDishTitle3: "Samsa",
+    signatureDishSubTitle3: "",
+    signatureDishDesc3: "烤制的糕点，填充调味肉，金黄酥脆。",
+    signatureDishTitle4: "Polo",
+    signatureDishSubTitle4: "(维吾尔抓饭)",
+    signatureDishDesc4: "用羊肉、胡萝卜和少许甜味烹制的香米。",
+    signatureDishTitle5: "Laghman",
+    signatureDishSubTitle5: "(手工拉面)",
+    signatureDishDesc5: "新鲜面条配以调味牛肉和蔬菜，酱汁鲜美。",
+
     ourPromiseTitle: "我们的承诺",
     ourPromiseSubtitle: "真实性。质量。卓越。",
     ourPromiseDesc:
       "在TARIM，我们很荣幸提供真正的维吾尔用餐体验，采用清真认证的食材烹制，以关怀的方式呈现。从我们的食材到我们的呈现 - 每一个细节都使您的访问难忘。",
+    ourPromiseCta: "让您的访问难忘",
 
-    // Ambience
     ambienceTitle: "氛围和体验",
     ambienceSubtitle: "奢华。舒适。文化。",
 
-    // Testimonials
     testimonialsTitle: "客户评价",
+    testimonialsSubTitle: "客户评价",
     testimonialReview:
       "这是一家很棒的餐厅，食物很好，气氛更好。食物很好吃，服务非常快速友好。这绝对是维也纳最好的餐厅之一！",
     customerName: "JONATHAN XANDER",
 
-    // Reservation
     reservationTitle: "预订",
     reservationSubtitle: "预订以获得幸福感",
     reservationDesc:
       "提前预订您的餐桌，享受无缝服务和完美的用餐环境。我们的团队将确保您的访问完美准备 - 从您喜欢的座位到您最喜爱的菜肴。",
+    followUs: "关注我们：",
     phoneLabel: "电话号码",
     phoneValue: "+43 1 728 0745",
     nameLabel: "姓名",
-    guestLabel: "人",
+    guestLabel: "人数",
     dateLabel: "日期",
     bookTable: "预订餐桌",
     bookNow: "立即预订",
 
-    // Map
     locationTitle: "我们的位置",
-    locationDesc: "访问我们位于维也纳市中心的餐厅。我们位于Enklplatz U-Bahn站附近，便于进出和舒适。",
+    locationDesc:
+      "访问我们位于维也纳市中心的餐厅。我们位于Enklplatz U-Bahn站附近，便于进出和舒适。",
     address: "Lorystraße 44, 1110 Wien, Austria",
     getDirections: "获取方向",
 
-    // Footer
-    footerAbout: "TARIM是一家真正的维吾尔餐厅，将丝绸之路美食带入现代餐饮体验。",
+    footerAbout:
+      "TARIM是一家真正的维吾尔餐厅，将丝绸之路美食带入现代餐饮体验。",
     allRightsReserved: "版权所有",
   },
 }

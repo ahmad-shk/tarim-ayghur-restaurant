@@ -8,31 +8,33 @@ export function WhereUghurMeetsCuisine() {
   const t = (key: string) => getTranslation(language, key as any)
 
   return (
-    <section id="restaurant" className="py-20 bg-background">
-      <div className="max-w-6xl mx-auto px-4 md:px-8">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+    <section id="restaurant" className="bg-primary primary-text-color">
+      <div className="max-w-[1300px] mx-auto px-4">
+        <div className="grid md:grid-cols-2 md:gap-12 items-center">
           <div className="space-y-6">
-            <h2 className="text-5xl md:text-6xl font-serif font-bold text-foreground whitespace-pre-line">
-              {t("cultureMeetsTitle")}
-            </h2>
+            <div className="md:py-0 py-8 md:text-start text-center">
+              <h2 className="aboreto-text text-secondary 2xl:text-[60px] xl:text-[50px] text-[32px] leading-[1.2]  whitespace-pre-line mb-[17px]">
+                {t("cultureMeetsTitle")}
+              </h2>
 
-            <p className="text-lg text-foreground/70 font-light leading-relaxed">{t("cultureMeetsDesc")}</p>
+              <p className="leading-relaxed mb-5">{t("cultureMeetsDesc")}</p>
 
-            <p className="text-lg text-foreground/70 font-light leading-relaxed">{t("chefsBlendDesc")}</p>
+              <p className="leading-relaxed">{t("chefsBlendDesc")}</p>
 
-            <a
-              href="#contact"
-              className="inline-block px-8 py-3 bg-accent text-accent-foreground font-serif font-semibold hover:opacity-90 transition"
-            >
-              {t("contact")}
-            </a>
+              {/* <a
+                href="#contact"
+                className="inline-block px-8 py-3 bg-accent text-accent-foreground font-serif font-semibold hover:opacity-90 transition"
+              >
+                {t("contact")}
+              </a> */}
+            </div>
           </div>
 
-          <div className="relative h-96">
+          <div className="relative">
             <img
-              src="/luxury-restaurant-warm-lighting.png"
+              src="/image/section-2.png"
               alt="Tarim restaurant interior"
-              className="w-full h-full object-cover rounded-lg"
+              className="w-full h-full object-cover"
             />
           </div>
         </div>

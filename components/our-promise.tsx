@@ -8,38 +8,25 @@ export function OurPromise() {
   const t = (key: string) => getTranslation(language, key as any)
 
   return (
-    <section className="py-20 bg-background">
-      <div className="max-w-6xl mx-auto px-4 md:px-8">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div className="relative h-96 order-2 md:order-1">
-            <img
-              src="/authentic-uyghur-cuisine-traditional-dishes.jpg"
-              alt="Authentic Uyghur cuisine"
-              className="w-full h-full object-cover rounded-lg"
-            />
-          </div>
-
-          <div className="space-y-6 order-1 md:order-2">
-            <h2 className="text-5xl md:text-6xl font-serif font-bold text-foreground">{t("ourPromiseTitle")}</h2>
+    <section className="md:pt-20 md:pb-24 py-12 bg-background" style={{background: 'url(/image/our-promise.jpg) center center no-repeat', backgroundSize: 'cover'}}>
+      <div className="max-w-[1300px] mx-auto px-4">
+        
+        <div className="flex justify-end items-end">
+          <div className="md:w-6/12 md:text-left text-center">
+            <h2 className="aboreto-text text-secondary 2xl:text-[60px] xl:text-[50px] text-[32px] 2xl:mb-[45px] mb-[30px]">{t("ourPromiseTitle")}</h2>
 
             <div className="space-y-4">
               <div>
-                <h3 className="text-2xl font-serif font-bold text-accent mb-2">Authenticity.</h3>
-                <p className="text-foreground/70 font-light">Every recipe passed down through generations</p>
-              </div>
-              <div>
-                <h3 className="text-2xl font-serif font-bold text-accent mb-2">Quality.</h3>
-                <p className="text-foreground/70 font-light">Halal-certified ingredients sourced with care</p>
-              </div>
-              <div>
-                <h3 className="text-2xl font-serif font-bold text-accent mb-2">Excellence.</h3>
-                <p className="text-foreground/70 font-light">Impeccable presentation and refined service</p>
+                <h3 className="2xl:text-[35px] xl:text-[30px] text-[24px] text-secondary mb-[40px]">{t("ourPromiseSubtitle")}</h3>
+                <p className="text-white 2xl:text-[20px]">{t("ourPromiseDesc")}</p>
               </div>
             </div>
-
-            <p className="text-foreground/70 font-light leading-relaxed">{t("ourPromiseDesc")}</p>
+            <div className="mt-[35px]">
+              <a href="#" className="btn bg-[#F5E3BF]">{t("ourPromiseCta")}</a>
+            </div>
           </div>
         </div>
+        
       </div>
     </section>
   )
