@@ -21,7 +21,7 @@ export function MenuShowcase() {
       <img src={'/image/slice-bg.png'} className="absolute left-0 top-0 z-1 xl:block hidden" />
       <div className="max-w-[1300px] mx-auto px-4 relative z-10">
         <div className="text-center xl:mb-12 mb-8 space-y-1">
-          <h2 className="aboreto-text text-secondary 2xl:text-[60px] xl:text-[50px] text-[32px] leading-[1.1]">{t("sliceOfHeaven")}</h2>
+          <h2 className="aboreto-text text-secondary 2xl:text-[60px] xl:text-[50px] text-[28px] leading-[1.1]">{t("sliceOfHeaven")}</h2>
           <p className="2xl:text-[40px] text-[24px]">{t("essenceOfFlavors")}</p>
         </div>
         <div className="bg-white/8 md:p-7 p-4 rounded-[14px]">
@@ -32,7 +32,7 @@ export function MenuShowcase() {
                   <img
                     src={`/image/${item.image}`}
                     alt={item.name}
-                    className="w-full h-full object-cover md:aspect-9/9 aspect-4/3"
+                    className="w-full h-full object-cover md:aspect-9/9 aspect-4/2"
                   />
                 </div>
                 <div className="pt-[24px] pb-[16px] px-1 text-center">

@@ -12,7 +12,7 @@ function PrevArrow(props: CustomArrowProps) {
   return (
     <button
       onClick={onClick}
-      className="slick-arrow absolute left-0 md:left-[calc((100%-920px)/2)] top-1/2 -translate-y-1/2 z-20 cursor-pointer"
+      className="slick-arrow absolute left-5 lg:left-[calc((100%-920px)/2)] top-1/2 -translate-y-1/2 z-20 cursor-pointer"
     >
       <svg width="52" height="83" viewBox="0 0 52 83" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path
@@ -30,7 +30,7 @@ function NextArrow(props: CustomArrowProps) {
   return (
     <button
       onClick={onClick}
-      className="slick-arrow absolute right-0 md:right-[calc((100%-920px)/2)] top-1/2 -translate-y-1/2 z-20 cursor-pointer"
+      className="slick-arrow absolute right-5  lg:right-[calc((100%-920px)/2)] top-1/2 -translate-y-1/2 z-20 cursor-pointer"
     >
       <svg width="52" height="83" viewBox="0 0 52 83" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path
@@ -68,8 +68,8 @@ export function Ambience() {
   return (
     <section className="bg-primary primary-text-color md:pb-[100px] pb-[50px]">
       <div className="max-w-[1300px] mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="aboreto-text text-secondary 2xl:text-[60px] xl:text-[50px] text-[32px] leading-[1.2]">
+        <div className="text-center md:mb-16 mb-10">
+          <h2 className="aboreto-text text-secondary 2xl:text-[60px] xl:text-[50px] text-[28px] leading-[1.2]">
             {t("ambienceTitle")}
           </h2>
           <p className="2xl:text-[40px] text-[24px]">{t("ambienceSubtitle")}</p>
@@ -79,12 +79,12 @@ export function Ambience() {
       <div className="relative ambiance-slider">
         <Slider {...settings}>
           {images.map((src, index) => (
-            <div key={index} className="min-w-[350px] sm:min-w-[380px] lg:min-w-[797px] max-w-[350px] sm:max-w-[380px] lg:max-w-[797px]">
+            <div key={index} className="min-w-[350px] max-w-[350px] sm:min-w-[380px]  sm:max-w-[380px] lg:min-w-[797px] lg:max-w-[797px]">
               <div className="overflow-hidden">
                 <img
                   src={src}
                   alt={`Ambience ${index + 1}`}
-                  className="w-full h-[500px] object-cover"
+                  className="w-full aspect-16/9 object-cover"
                 />
               </div>
             </div>

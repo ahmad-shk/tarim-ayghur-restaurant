@@ -146,6 +146,17 @@ html, body {
 .btn {display: inline-flex; padding: 10px 20px; font-size: inherit; font-weight: 400; font-family: "Aboreto", system-ui; border-radius: 25px; line-height: normal; border: 1px solid var(--primary-color); cursor: pointer;}
 .btn-primary {background-color: var(--primary-color); color: #fff;}
 
+@media screen and (max-width: 512px) {
+  .logo img {max-width: 110px;}
+  .btn {padding: 7px 16px;}
+
+  .testimonial-swiper .swiper-button-next,
+  .testimonial-swiper .swiper-button-prev {top: 68% !important;}
+
+  /* .mbl-placeholder {position: absolute; left: 0; top: 0; width: 100%; height: 100%; opacity: .2;}
+  .mbl-placeholder img {width: 100%; height: 100%;} */
+}
+
 @media screen and (min-width: 1300px) {
   #home .left-col {padding-left: calc((100% - 1260px)/2);}
 }

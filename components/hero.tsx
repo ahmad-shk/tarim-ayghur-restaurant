@@ -10,7 +10,7 @@ export function Hero() {
   return (
     <section
       id="home"
-      className="relative md:flex items-center justify-center overflow-hidden relative pt-[94px]"
+      className="relative md:flex items-center justify-center overflow-hidden relative pt-[94px] lg:px-12"
     >
       <div style={{zIndex: '99'}} className="absolute lg:block hidden right-0 top-0 h-full">
         <img className="h-full" src={'/image/banner-layer.png'} />
@@ -37,7 +37,7 @@ export function Hero() {
           </a>
         </div>
       </div>
-      <div>
+      <div className="mbl-placeholder">
         <img src={'/image/banner.webp'} alt="img" className="object-cover" />
       </div>
     </section>

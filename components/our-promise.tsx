@@ -13,7 +13,7 @@ export function OurPromise() {
         
         <div className="flex justify-end items-end">
           <div className="md:w-6/12 md:text-left text-center">
-            <h2 className="aboreto-text text-secondary 2xl:text-[60px] xl:text-[50px] text-[32px] 2xl:mb-[45px] mb-[30px]">{t("ourPromiseTitle")}</h2>
+            <h2 className="aboreto-text text-secondary 2xl:text-[60px] xl:text-[50px] text-[28px] 2xl:mb-[45px] mb-[30px]">{t("ourPromiseTitle")}</h2>
 
             <div className="space-y-4">
               <div>

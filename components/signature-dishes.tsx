@@ -44,7 +44,7 @@ export function SignatureDishes() {
   return (
     <section className="bg-primary md:pt-20 pt-10 primary-text-color">
       <div className="max-w-[1300px] mx-auto px-4 text-center space-y-1">
-        <h2 className="aboreto-text text-secondary 2xl:text-[60px] xl:text-[50px] text-[32px] leading-[1.1] whitespace-pre-line">
+        <h2 className="aboreto-text text-secondary 2xl:text-[60px] xl:text-[50px] text-[28px] leading-[1.1] whitespace-pre-line">
           {t("SignatureDishesTitle")}
         </h2>
         <p className="xl:text-[35px] text-24">{t("SignatureDishesSubTitle")}</p>

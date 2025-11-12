@@ -13,7 +13,7 @@ export function WhereUghurMeetsCuisine() {
         <div className="grid md:grid-cols-2 md:gap-12 items-center">
           <div className="space-y-6">
             <div className="md:py-0 py-8 md:text-start text-center">
-              <h2 className="aboreto-text text-secondary 2xl:text-[60px] xl:text-[50px] text-[32px] leading-[1.2]  whitespace-pre-line mb-[17px]">
+              <h2 className="aboreto-text text-secondary 2xl:text-[60px] xl:text-[50px] text-[28px] leading-[1.2]  whitespace-pre-line mb-[17px]">
                 {t("cultureMeetsTitle")}
               </h2>
 

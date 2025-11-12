@@ -8,7 +8,7 @@ export function AmbienceVideo() {
   const [playing, setPlaying] = useState(false)
 
   return (
-    <div className="relative w-full aspect-[16/6] overflow-hidden">
+    <div className="relative w-full md:aspect-[16/6] aspect-[16/9] overflow-hidden">
       <ReactPlayer
         src="https://youtu.be/xPPLbEFbCAo?si=Oanv8SoE87JsV2ZR" 
         playing={playing}

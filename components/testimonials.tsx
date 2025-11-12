@@ -27,7 +27,7 @@ export function Testimonials() {
       <div className="max-w-[1300px] mx-auto px-4">
         {/* Section Header */}
         <div className="text-center lg:mb-16 mb-8">
-          <h2 className="aboreto-text text-secondary 2xl:text-[60px] xl:text-[50px] text-[32px]">
+          <h2 className="aboreto-text text-secondary 2xl:text-[60px] xl:text-[50px] text-[28px]">
             {t("testimonialsTitle")}
           </h2>
           <p className="2xl:text-[48px] xl:text-[44px] text-[24px]">

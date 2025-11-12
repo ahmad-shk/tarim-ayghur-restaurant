@@ -11,7 +11,7 @@ export function Footer() {
   return (
     <>
     <footer className="bg-[#F4E3BE] md:pt-12 md:pb-20 py-12">
-      <div className="max-w-[1300px] mx-auto px-4 text-[20px]">
+      <div className="max-w-[1300px] mx-auto px-4 md:text-[20px]">
         <div className="flex justify-center mb-[40px]">
           <Link href={'/'}>
             <img src={'/logo/logo.svg'} />

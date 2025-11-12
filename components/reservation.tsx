@@ -40,7 +40,7 @@ export function Reservation() {
       <div className="max-w-[1300px] mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-12">
           <div className="">
-            <h2 className="md:text-left text-center aboreto-text text-secondary 2xl:text-[60px] xl:text-[50px] text-[32px] md:mb-[20px]">{t("reservationTitle")}</h2>
+            <h2 className="md:text-left text-center aboreto-text text-secondary 2xl:text-[60px] xl:text-[50px] text-[28px] md:mb-[20px]">{t("reservationTitle")}</h2>
             <p className="md:text-left text-center md:text-[28px] text-[24px] font-medium md:w-8/12">{t("reservationSubtitle")}</p>
             {/* <p className="text-foreground/70 font-light leading-relaxed">{t("reservationDesc")}</p> */}
 
@@ -86,7 +86,7 @@ export function Reservation() {
           </div>
 
           <form onSubmit={handleSubmit} className="bg-background/9 rounded-lg p-8 space-y-4">
-            <h2 className="md:text-left text-center aboreto-text text-secondary 2xl:text-[60px] xl:text-[50px] text-[32px] mb-[20px] md:pt-[20px]">{t("reservationTitle")}</h2>
+            <h2 className="md:text-left text-center aboreto-text text-secondary 2xl:text-[60px] xl:text-[50px] text-[28px] mb-[20px] md:pt-[20px]">{t("reservationTitle")}</h2>
             <div>
               {/* <label className="block text-sm font-light text-foreground/70 mb-2">{t("nameLabel")}</label> */}
               <input
