@@ -11,7 +11,7 @@ export function Map() {
   const googleMapsUrl = `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(address)}`
 
   return (
-    <section className="md:py-20 py-12 bg-primary">
+    <section className="md:py-20 py-12">
       <div className="max-w-[1300px] mx-auto px-4">
         {/* <div className="text-center mb-12">
           <h2 className="text-5xl md:text-6xl font-serif font-bold text-foreground mb-4">{t("locationTitle")}</h2>

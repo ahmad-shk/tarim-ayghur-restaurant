@@ -4,9 +4,13 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
+  --theme-body-color: #fff;
+  --theme-text-color: #000;
+
   --primary-color: #66282C;
   --primary-text-color: #fff;
   --secondary-color: #F5E3BF;
+  
   /* Luxury Uyghur Restaurant - Warm, Elegant Palette */
   --background: oklch(0.98 0 0);
   --foreground: oklch(0.2 0 0);
@@ -44,6 +48,9 @@
 }
 
 .dark {
+  --theme-body-color: #65282C;
+  --theme-text-color: #fff;
+
   --background: oklch(0.12 0 0);
   --foreground: oklch(0.96 0 0);
   --card: oklch(0.15 0.01 40);
@@ -130,15 +137,18 @@
 }
 
 html, body {
-  font-family: "Inter", sans-serif; font-size: 16px;
+  font-family: "Inter", sans-serif; font-size: 16px; background-color: var(--theme-body-color); color: var(--theme-text-color);
 }
 
 @media screen and (min-width: 1700px) {
     html, body {font-size: 18px;}
 }
 
-.text-primary {color: var(--primary-color);}
-.text-secondary {color: var(--secondary-color);}
+.dark\:text-primary:is(.dark *),
+.text-primary {color: var(--primary-color) !important;}
+.dark\:text-secondary:is(.dark *),
+.text-secondary {color: var(--secondary-color) !important;}
+.dark\:bg-primary:is(.dark *),
 .bg-primary {background-color: var(--primary-color);}
 .primary-text-color {color: var(--primary-text-color);}
 .aboreto-text {font-family: "Aboreto", system-ui;}
@@ -182,3 +192,7 @@ form .react-datepicker-wrapper {display: block;}
 .react-datepicker__time-container .react-datepicker__time .react-datepicker__time-box ul.react-datepicker__time-list {
   width: 100px !important;
 }
+
+
+.dark .form-bg {background-color: rgba(255, 255, 255, .1) !important;}
+.light .filter-logo {filter: brightness(100);}

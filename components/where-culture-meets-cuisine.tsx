@@ -8,12 +8,12 @@ export function WhereUghurMeetsCuisine() {
   const t = (key: string) => getTranslation(language, key as any)
 
   return (
-    <section id="restaurant" className="bg-primary primary-text-color">
+    <section id="restaurant" className="">
       <div className="max-w-[1300px] mx-auto px-4">
         <div className="grid md:grid-cols-2 md:gap-12 items-center">
           <div className="space-y-6">
             <div className="md:py-0 py-8 md:text-start text-center">
-              <h2 className="aboreto-text text-secondary 2xl:text-[60px] xl:text-[50px] text-[28px] leading-[1.2]  whitespace-pre-line mb-[17px]">
+              <h2 className="aboreto-text dark:text-secondary 2xl:text-[60px] xl:text-[50px] text-[28px] leading-[1.2]  whitespace-pre-line mb-[17px]">
                 {t("cultureMeetsTitle")}
               </h2>
 

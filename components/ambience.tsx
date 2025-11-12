@@ -66,10 +66,10 @@ export function Ambience() {
   }
 
   return (
-    <section className="bg-primary primary-text-color md:pb-[100px] pb-[50px]">
+    <section className="md:pb-[100px] pb-[50px]">
       <div className="max-w-[1300px] mx-auto px-4">
         <div className="text-center md:mb-16 mb-10">
-          <h2 className="aboreto-text text-secondary 2xl:text-[60px] xl:text-[50px] text-[28px] leading-[1.2]">
+          <h2 className="aboreto-text dark:text-secondary 2xl:text-[60px] xl:text-[50px] text-[28px] leading-[1.2]">
             {t("ambienceTitle")}
           </h2>
           <p className="2xl:text-[40px] text-[24px]">{t("ambienceSubtitle")}</p>

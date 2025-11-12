@@ -10,7 +10,7 @@ export function Hero() {
   return (
     <section
       id="home"
-      className="relative md:flex items-center justify-center overflow-hidden relative pt-[94px] lg:px-12"
+      className="relative md:flex items-center justify-center overflow-hidden relative pt-[94px] lg:px-12 bg-[#F5E3BF]"
     >
       <div style={{zIndex: '99'}} className="absolute lg:block hidden right-0 top-0 h-full">
         <img className="h-full" src={'/image/banner-layer.png'} />

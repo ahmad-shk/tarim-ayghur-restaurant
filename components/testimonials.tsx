@@ -23,11 +23,11 @@ export function Testimonials() {
   ]
 
   return (
-    <section className="lg:py-20 py-12 bg-primary primary-text-color">
+    <section className="lg:py-20 py-12">
       <div className="max-w-[1300px] mx-auto px-4">
         {/* Section Header */}
         <div className="text-center lg:mb-16 mb-8">
-          <h2 className="aboreto-text text-secondary 2xl:text-[60px] xl:text-[50px] text-[28px]">
+          <h2 className="aboreto-text dark:text-secondary 2xl:text-[60px] xl:text-[50px] text-[28px]">
             {t("testimonialsTitle")}
           </h2>
           <p className="2xl:text-[48px] xl:text-[44px] text-[24px]">
@@ -54,7 +54,7 @@ export function Testimonials() {
                 <p className="md:w-10/12 mx-auto lg:text-[26px] text-[20px] opacity-75 leading-relaxed italic">
                   "{item.text}"
                 </p>
-                <div className="flex justify-center my-[50px]">
+                <div className="flex justify-center my-[50px] dark:text-[#E3C08D]">
                   <svg
                     width="75"
                     height="54"
@@ -64,11 +64,11 @@ export function Testimonials() {
                   >
                     <path
                       d="M5.34416 53.4416H21.3766L32.0649 32.0649V0H0V32.0649H16.0325L5.34416 53.4416ZM48.0974 53.4416H64.1299L74.8182 32.0649V0H42.7532V32.0649H58.7857L48.0974 53.4416Z"
-                      fill="#E3C08D"
+                      fill="currentColor"
                     />
                   </svg>
                 </div>
-                <p className="aboreto-text 2xl:text-[40px] text-[30px] text-secondary">
+                <p className="aboreto-text 2xl:text-[40px] text-[30px] dark:text-secondary">
                   {item.name}
                 </p>
               </div>

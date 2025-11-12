@@ -5,6 +5,7 @@ import Link from "next/link"
 import { LanguageSwitcher } from "./language-switcher"
 import { useLanguage } from "@/lib/language-context"
 import { getTranslation } from "@/lib/translations"
+import { ThemeToggle } from "./ui/theme-toggle"
 
 export function Navigation() {
   const [isOpen, setIsOpen] = useState(false)
@@ -23,10 +24,10 @@ export function Navigation() {
 
           {/* Desktop Menu */}
           <div className="hidden md:flex gap-5 items-center tracking-wider">
-            <Link href="#home" className="text-primary font-semibold hover:underline transition">
+            <Link href="/" className="text-primary font-semibold hover:underline transition">
               {t("home")}
             </Link>
-            <Link href="#menu" className="text-primary font-semibold hover:underline transition">
+            <Link href="/restaurant-menu" className="text-primary font-semibold hover:underline transition">
               {t("menu")}
             </Link>
             <Link href="#gallery" className="text-primary font-semibold hover:underline transition">
@@ -44,7 +45,7 @@ export function Navigation() {
             <LanguageSwitcher />
 
             {/* Mobile Menu Button */}
-            <button className="md:hidden" onClick={() => setIsOpen(!isOpen)}>
+            <button className="md:hidden text-gray-700" onClick={() => setIsOpen(!isOpen)}>
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
               </svg>
@@ -55,20 +56,23 @@ export function Navigation() {
       </div>
     </nav>
     {/* Mobile Dropdown */}
+
+    <ThemeToggle />
+
     {/* Dropdown Menu */}
     <div
       className={`bg-primary text-white absolute right-0 mt-2 w-40 py-3 bg-white rounded-0 shadow-lg overflow-hidden transition transition-ease duration-300 top-[70px] w-full z-60 top-0
         ${isOpen ? "translate-y-[0%] max-h-96" : "-translate-y-[200%] pointer-events-none"}`}
     >
       <Link
-        href="#home"
+        href="/"
         className="block px-4 py-3  hover:underline transition"
         onClick={() => setIsOpen(false)}
       >
         {t("home")}
       </Link>
       <Link
-        href="#menu"
+        href="/restaurant-menu"
         className="block px-4 py-3  hover:underline transition"
         onClick={() => setIsOpen(false)}
       >

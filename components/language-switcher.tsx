@@ -34,7 +34,7 @@ export function LanguageSwitcher() {
       <button
         type="button"
         onClick={toggleDropdown}
-        className="w-9 h-9 flex items-center justify-center rounded-full border border-gray-300 bg-white cursor-pointer hover:shadow-md transition-all duration-200"
+        className="w-9 h-9 flex items-center justify-center rounded-full border border-gray-300 bg-white cursor-pointer hover:shadow-md transition-all duration-200 text-gray-700"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
