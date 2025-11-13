@@ -15,16 +15,29 @@ interface MenuNavigationProps {
 }
 
 export default function MenuNavigation({ activeCategory, onCategoryChange }: MenuNavigationProps) {
+  
+  const handleCategoryClick = (category: MenuCategory) => {
+    onCategoryChange(category);
+
+    const section = document.getElementById(category);
+    if (section) {
+      window.scrollTo({
+        top: section.offsetTop - 50,
+        behavior: "smooth",
+      });
+    }
+  };
+
   return (
-    <nav className="py-4">
-      <div className="flex flex-wrap justify-center gap-3">
+    <nav className="lg:pb-16 md:sticky top-0 ">
+      <div className="flex flex-wrap justify-center gap-3 py-4 bg-white dark:bg-color-primary">
         {categories.map((category) => (
           <button
             key={category.id}
-            onClick={() => onCategoryChange(category.id)}
-            className={`px-6 py-2 rounded-full text-sm cursor-pointer font-medium tracking-wide transition-all duration-300 ${
+            onClick={() => handleCategoryClick(category.id)}
+            className={`px-6 py-2 rounded-full text-base cursor-pointer font-medium tracking-wide transition-all duration-300 leading-none ${
               activeCategory === category.id
-                ? "bg-[#F5E3BF] text-primary"
+                ? "bg-color-secondary text-primary"
                 : "bg-white/20"
             }`}
           >
@@ -33,5 +46,5 @@ export default function MenuNavigation({ activeCategory, onCategoryChange }: Men
         ))}
       </div>
     </nav>
-  )
+  );
 }

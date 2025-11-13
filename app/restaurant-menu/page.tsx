@@ -25,8 +25,7 @@ export default function ResturantMenu() {
         <div className="max-w-[1300px] mx-auto">
           <h2 className="aboreto-text dark:text-secondary 2xl:text-[60px] xl:text-[50px] text-[28px] 2xl:mb-[45px] mb-[5px] text-center">Restaurant Menu</h2>
           <MenuNavigation activeCategory={activeCategory} onCategoryChange={setActiveCategory} />
-          {/* <MenuGroup category={activeCategory} items={menuData[activeCategory]} /> */}
-
+          <MenuGroup category={activeCategory} items={menuData[activeCategory]} />
 
         </div>
       </div>
