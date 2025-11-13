@@ -3,6 +3,11 @@
 
 @custom-variant dark (&:is(.dark *));
 
+@theme {
+  --color-color-secondary: #F5E3BF;
+  --color-color-primary: #66282C;
+}
+
 :root {
   --theme-body-color: #fff;
   --theme-text-color: #000;
@@ -196,3 +201,14 @@ form .react-datepicker-wrapper {display: block;}
 
 .dark .form-bg {background-color: rgba(255, 255, 255, .1) !important;}
 .light .filter-logo {filter: brightness(100);}
+
+
+.thumb-slider .slick-track {
+  display: flex;
+}
+.thumb-slider .slick-slide {
+  width: 189px; min-width: 189px;
+}
+.thumb-slider .slick-slide:not(.slick-current) {
+  opacity: .5;
+}
