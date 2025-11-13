@@ -18,8 +18,8 @@ export function Hero() {
       <div style={{zIndex: '99'}} className="absolute lg:block hidden left-0 top-0 h-full transform rotate-180">
         <img className="h-full" src={'/image/banner-layer.png'} />
       </div>
-      <div className="left-col 2xl:w-8/12 md:6/12 md:text-start text-center py-7 px-4">
-        <h1 className="aboreto-text 2xl:text-[60px] xl:text-[50px] text-[38px] text-primary leading-[1.1] text-balance whitespace-pre-line">
+      <div className="left-col 2xl:w-9/12 md:6/12 md:text-start text-center py-7 px-4">
+        <h1 className="aboreto-text 2xl:text-[60px] xl:text-[46px] text-[38px] text-primary leading-[1.1] text-balance whitespace-pre-line banner-title">
           {t("welcomeTitle")}
         </h1>
 

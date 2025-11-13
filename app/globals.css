@@ -212,3 +212,11 @@ form .react-datepicker-wrapper {display: block;}
 .thumb-slider .slick-slide:not(.slick-current) {
   opacity: .5;
 }
+
+/* media */
+@media screen and (max-width: 1550px) {
+  .banner-title {font-size: 48px;}
+}
+@media screen and (max-width: 991px) {
+  .banner-title {font-size: 34px;}
+}

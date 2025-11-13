@@ -6,27 +6,30 @@ import { Hero } from "@/components/restaurant-menu/hero";
 import MenuGroup from "@/components/restaurant-menu/menu-group";
 import MenuNavigation from "@/components/restaurant-menu/menu-navigation";
 import { Testimonials } from "@/components/testimonials";
-import { menuData } from "@/lib/translations";
 import { useState } from "react";
 
-import { Map } from "@/components/map"
+import { useLanguage } from "@/lib/language-context"
+import { translations } from "@/lib/translations"
+
 import { Footer } from "@/components/footer"
 
 type MenuCategory = "breakfast" | "lunch" | "dinner" | "desserts"
 
 export default function ResturantMenu() {
   const [activeCategory, setActiveCategory] = useState<MenuCategory>("breakfast")
+  
+  const { language } = useLanguage()
+  const t = translations[language] // ✅ correct reference
 
   return (
     <main className="min-h-screen">
       <Navigation />
       <Hero />
-      <div className="bg-primary py-20 primary-text-color">
+      <div className="dark:bg-primary md:py-20 py-12">
         <div className="max-w-[1300px] mx-auto">
-          <h2 className="aboreto-text dark:text-secondary 2xl:text-[60px] xl:text-[50px] text-[28px] 2xl:mb-[45px] mb-[5px] text-center">Restaurant Menu</h2>
+          <h2 className="aboreto-text dark:text-secondary 2xl:text-[60px] xl:text-[50px] text-[28px] 2xl:mb-[45px] mb-[5px] text-center">{t.RestaurantMenuText}</h2>
           <MenuNavigation activeCategory={activeCategory} onCategoryChange={setActiveCategory} />
-          <MenuGroup category={activeCategory} items={menuData[activeCategory]} />
-
+          <MenuGroup />
         </div>
       </div>
       <Testimonials />

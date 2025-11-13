@@ -14,7 +14,7 @@ export function Navigation() {
 
   return (
     <>
-      <nav className="absolute top-0 w-full backdrop-blur lg:z-50 z-10 bg-[#F5E3BF] py-[10px] lg:px-12 z-61">
+      <nav className="absolute top-0 w-full backdrop-blur lg:z-50 z-10 bg-[#F5E3BF] py-[10px] lg:px-12 z-61" style={{minHeight: '92px'}}>
         <div className="max-w-[1300px] mx-auto px-4">
           <div className="flex justify-between items-center h-16">
             {/* Logo */}
@@ -66,12 +66,12 @@ export function Navigation() {
               </Link>
             </div>
             <div className="flex items-center gap-2 justify-end md:min-w-[200px]">
-              <a
+              <Link
                 href="/contact-us"
                 className="btn btn-primary hover:opacity-90 transition"
               >
                 {t("contact")}
-              </a>
+              </Link>
 
               <LanguageSwitcher />
 
