@@ -14,7 +14,7 @@ export function Navigation() {
 
   return (
     <>
-      <nav className="absolute top-0 w-full backdrop-blur lg:z-50 z-10 bg-[#F5E3BF]/70 py-[10px] lg:px-12 z-61">
+      <nav className="absolute top-0 w-full backdrop-blur lg:z-50 z-10 bg-[#F5E3BF] py-[10px] lg:px-12 z-61">
         <div className="max-w-[1300px] mx-auto px-4">
           <div className="flex justify-between items-center h-16">
             {/* Logo */}
