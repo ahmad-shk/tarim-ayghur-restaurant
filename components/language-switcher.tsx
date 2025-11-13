@@ -9,10 +9,11 @@ export function LanguageSwitcher() {
   const [langDropdown, setLangDropdown] = useState(false)
   const dropdownRef = useRef<HTMLDivElement>(null)
 
-  const languages: { code: Language; label: string }[] = [
+ const languages: { code: Language; label: string }[] = [
     { code: "de", label: "Deutsch" },
     { code: "en", label: "English" },
     { code: "zh", label: "中文" },
+    { code: "ru", label: "Русский" },
   ]
 
   const toggleDropdown = () => setLangDropdown((prev) => !prev)
