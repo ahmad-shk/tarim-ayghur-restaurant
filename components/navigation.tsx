@@ -67,7 +67,7 @@ export function Navigation() {
             </div>
             <div className="flex items-center gap-2 justify-end md:min-w-[200px]">
               <a
-                href="#reservation"
+                href="/contact-us"
                 className="btn btn-primary hover:opacity-90 transition"
               >
                 {t("contact")}
