@@ -239,6 +239,85 @@ export const translations = {
       "TARIM是一家真正的维吾尔餐厅，将丝绸之路美食带入现代餐饮体验。",
     allRightsReserved: "版权所有",
   },
+  // Russian
+  ru: {
+    home: "ГЛАВНАЯ",
+    menu: "МЕНЮ РЕСТОРАНА",
+    gallery: "ГАЛЕРЕЯ",
+    contact: "КОНТАКТЫ",
+    exploreMenu: "ИЗУЧИТЬ МЕНЮ",
+
+    welcomeTitle: "ДОБРО ПОЖАЛОВАТЬ В\nTARIM УЙГУРСКИЙ\nРЕСТОРАН",
+    welcomeDesc:
+      "Ощутите богатые вкусы уйгурского наследия в изысканной атмосфере. В TARIM каждое блюдо рассказывает историю традиций, приготовленных из лучших ингредиентов и поданных с элегантностью.",
+
+    cultureMeetsTitle: "ГДЕ КУЛЬТУРА\nВСТРЕЧАЕТ КУХНЮ",
+    cultureMeetsDesc:
+      "Вдохновленный древним Шёлковым путем, ресторан TARIM Uyghur приносит подлинный вкус уйгурской кухни в современный и роскошный формат. От лапши ручной работы до нежного барашка и ароматного плова — каждое блюдо отражает искусство уйгурской кухни — насыщенное, ароматное и глубоко культурное.",
+    chefsBlendDesc:
+      "Наши шеф-повара сочетают древние рецепты с современной подачей, создавая гастрономический опыт, который одновременно вечен и утончён.",
+
+    sliceOfHeaven: "КУСОЧЕК РАЯ",
+    essenceOfFlavors: "Суть традиционных вкусов",
+    viewMenu: "ПРОСМОТР",
+
+    SignatureDishesTitle: "Фирменные блюда",
+    SignatureDishesSubTitle: "Суть традиционных вкусов",
+    signatureDishTitle1: "Кавап",
+    signatureDishSubTitle1: "(Шашлык из баранины)",
+    signatureDishDesc1: "Баранина на углях с аутентичными уйгурскими специями.",
+    signatureDishTitle2: "Уйгурские десерты",
+    signatureDishSubTitle2: "",
+    signatureDishDesc2: "Традиционные сладости с уникальным вкусом уйгурской кухни.",
+    signatureDishTitle3: "Самса",
+    signatureDishSubTitle3: "",
+    signatureDishDesc3: "Выпечка, запечённая в печи, с пряной мясной начинкой, золотистая и хрустящая.",
+    signatureDishTitle4: "Плов",
+    signatureDishSubTitle4: "(Уйгурский плов)",
+    signatureDishDesc4: "Ароматный рис, приготовленный с бараниной, морковью и лёгкой сладостью.",
+    signatureDishTitle5: "Лагман",
+    signatureDishSubTitle5: "(Лапша ручной работы)",
+    signatureDishDesc5: "Свежая лапша с приправленной говядиной и овощами в насыщенном соусе.",
+
+    ourPromiseTitle: "НАШЕ ОБЕЩАНИЕ",
+    ourPromiseSubtitle: "Аутентичность. Качество. Совершенство.",
+    ourPromiseDesc:
+      "В TARIM мы гордимся тем, что предлагаем подлинный уйгурский гастрономический опыт, приготовленный из халяльных ингредиентов и поданный с заботой. Каждая деталь — от ингредиентов до подачи — делает ваш визит незабываемым.",
+    ourPromiseCta: "Ваш визит будет незабываемым",
+
+    ambienceTitle: "АТМОСФЕРА И ОПЫТ",
+    ambienceSubtitle: "Роскошь. Комфорт. Культура.",
+
+    testimonialsTitle: "ОТЗЫВЫ КЛИЕНТОВ",
+    testimonialsSubTitle: "Отзывы",
+    testimonialReview:
+      "Отличный ресторан с великолепной кухней и атмосферой. Еда вкусная, обслуживание быстрое и дружелюбное. Определённо одно из лучших заведений в Вене!",
+    customerName: "ДЖОНАТАН КСАНДЕР",
+
+    reservationTitle: "БРОНИРОВАНИЕ",
+    reservationSubtitle: "Дарите радость, бронируя столик",
+    reservationDesc:
+      "Забронируйте столик заранее, чтобы насладиться безупречным обслуживанием и идеальной атмосферой. Наша команда позаботится о каждом нюансе — от вашего любимого места до любимых блюд.",
+    followUs: "Подписывайтесь на нас:",
+    phoneLabel: "Телефон",
+    phoneValue: "+43 1 728 0745",
+    ContactEmail: "info@karim.com",
+    nameLabel: "Имя",
+    guestLabel: "Количество гостей",
+    dateLabel: "Дата",
+    bookTable: "ЗАБРОНИРОВАТЬ СТОЛИК",
+    bookNow: "БРОНИРОВАТЬ СЕЙЧАС",
+
+    locationTitle: "НАШЕ МЕСТОПОЛОЖЕНИЕ",
+    locationDesc:
+      "Посетите наш ресторан в самом сердце Вены. Мы находимся рядом со станцией метро Enklplatz — удобно и легко добраться.",
+    address: "Lorystraße 44, 1110 Вена, Австрия",
+    getDirections: "ПОЛУЧИТЬ МАРШРУТ",
+
+    footerAbout:
+      "TARIM — это аутентичный уйгурский ресторан, объединяющий кухню Шёлкового пути с современным опытом ужина.",
+    allRightsReserved: "Все права защищены",
+  },
 }
 
 export const menuData = {
@@ -445,9 +524,12 @@ export const menuData = {
 }
 
 
-export type LanguageKey = keyof typeof translations
-export type Language = "de" | "en" | "zh"
+// Define language and key types
+export type Language = keyof typeof translations
+type TranslationKeys = keyof typeof translations["en"]
 
-export const getTranslation = (lang: Language, key: keyof typeof translations.en) => {
-  return translations[lang]?.[key as any] || translations.en[key as any] || ""
+// Type-safe translation getter
+export const getTranslation = (lang: Language, key: TranslationKeys): string => {
+  const translationSet = translations[lang] as Record<TranslationKeys, string>
+  return translationSet[key] || translations.en[key] || ""
 }
